@@ -1,0 +1,32 @@
+{%load static %}
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="suthor" content="">
+    
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static 'css/one-page-wonder.min.css' %}">
+
+    <!-- My style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css' %}">
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Navigetion -->
+        nav.navbar navber-expand-lg navbar-dark navbar-customfixed-top
+    </div>    
+</body>
+</html>
