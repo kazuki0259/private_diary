@@ -1,9 +1,7 @@
 {% extends 'diary/base.html' %}
 {% load static %}
 
-{% block title %}お問い合わせ{% endblock %}
-
-<!-- {% block head %}<link href="{% static 'css/mystyle.css' %}" rel="stylesheet" />{% endblock %} -->
+{% block title %}お問い合わせ|Private Diary{% endblock %}
 
 {% block active_inquiry %}active{% endblock %}
 
@@ -14,7 +12,6 @@
                 <div class="row gx-5 align-items-center my-div-style">
                     <form method="post">
                         {% csrf_token %}
-                            
                             
                         {{ form.non_field_errors }}
                             
