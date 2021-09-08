@@ -123,3 +123,47 @@ STATICFILES_DIRS=(
     os.path.join(BASE_DIR,'static'),
 
 )
+
+
+
+#settings_devに書くやつ
+# from .settings import *
+
+
+# #SECURITY WARNING: don't run with debug turned on in production! DEBUG = True
+
+# ALLOWED_HOSTS = []
+
+# #ロギング設定
+# LOGGING = {
+#     'version': 1, #1固定
+#     'disable_existing_loggers':False,
+
+#     'liggers':{
+#         #Djangoが利用するロガー
+#         'django':{
+#             'handlers':['console'],
+#             'level':'INFO',
+#         },
+#         #diaryアプリケーションが利用するロガー
+#         'diary':{
+#             'handlers':['console'],
+#             'level':'DEBUG',
+#         },
+
+#         #ハンドラの設定
+#         'handlers':{
+#             'dev':{
+#                 'format':'\t'.join([
+#                     '%(asctime)s',
+#                     '[%(levelname)s]',
+#                     '%(pathname)s(Line:%(lineno)d',
+#                     '%(message)s'
+#                 ])
+#             },
+#         }
+#     }
+# }
+
+
+EMAIL_BACKEND =  'django.core.mail.backends.console.EmailBackend'
