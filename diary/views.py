@@ -9,8 +9,6 @@ from .forms import InquiryForm
 import logging
 from django.urls import reverse_lazy
 
-from django.contrib.auth.mixins import LoginRequiredMixin
-
 
 # Create your views here.
 
@@ -34,6 +32,8 @@ class InquiryView(generic.FormView):
         return super().form_valid(form)
 
 
+from django.contrib.auth.mixins import LoginRequiredMixin
+from .models import Diary
 class DiaryListView(LoginRequiredMixin, generic.ListView):
     model = Diary
     template_name = 'diary_list.html'
